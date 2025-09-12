@@ -1,12 +1,17 @@
-const arg = process.argv{2}
-
-//convert the argument to an integer
-const num = parseInt(arg, 10);
-
-//check if the conversion was successful
-if (!isNaN(num)) {
-console.log(`My number: ${num}`);
+function main() {
+    if (process.argv.length < 3) {
+        console.log("Not a number");
+        return;
+    }
+    
+    const input = process.argv[2];
+    const number = parseInt(input, 10);
+    
+    if (!isNaN(number)) {
+        console.log(`My number: ${number}`);
+    } else {
+        console.log("Not a number");
+    }
 }
-else {
-console.log("Not a number");
-}
+
+main();
