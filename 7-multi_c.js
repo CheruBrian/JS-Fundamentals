@@ -1,12 +1,13 @@
-const x = pareInt(process.argv{2}, 100;
+const x = parseInt(process.argv[2]);
 
 if (isNaN(x)) {
-console.log("Missing number of occurrences");
-}
-else {
-let i = 0;
-while (1 < x) {
-console.log('C is fun);
-i++;
-}
+  console.log("Missing number of occurrences");
+} else {
+  let i = 0;
+  let output = "";
+  while (i < x) {
+    output += "C is fun\n";
+    i++;
+  }
+  console.log(output.trim());
 }
