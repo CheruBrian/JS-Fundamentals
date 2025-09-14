@@ -1,17 +1,15 @@
-// Array of strings
-const languages  = {
-"C is fun",
-"Python is cool",
-"JavaScript is amazing"
-};
+const messages = [
+  "C is fun",
+  "Python is cool",
+  "JavaScript is amazing"
+];
 
-//use of loop  through array
-let i = 0;
 let output = "";
-while( i < language.length) {
-output += language[1] + "\n";
-i++;
+let i = 0;
+
+while (i < messages.length) {
+  output += messages[i] + "\n";
+  i++;
 }
 
-//print 
-console.log(output);
+console.log(output.trim());
